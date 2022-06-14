@@ -1,26 +1,25 @@
 <template>
+  <div id="app">
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <p>{{ $t("main.welcome") }}</p>
+  <p>Day of the week :  {{ $t ("date.monday")}}</p>
+  <p>text pas traduit</p>
+  <LocalSwitcher />
+  <p>2eme text pas traduit</p>
+  
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LocalSwitcher from '@/components/LocalSwitcher.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  name : 'App',
+  components:{
+    LocalSwitcher
   }
 }
+
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+

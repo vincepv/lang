@@ -1,0 +1,12 @@
+{
+  "main": {
+    "welcome": "Salut"
+  },
+
+
+  "date": {
+    "monday":"Lundi",
+    "sunday":"Dimanche"
+  }
+  
+}
