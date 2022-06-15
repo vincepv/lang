@@ -1,25 +1,9 @@
 <template>
-  <div id="app">
-  <img alt="Vue logo" src="./assets/logo.png">
-  <p>{{ $t("main.welcome") }}</p>
-  <p>Day of the week :  {{ $t ("date.monday")}}</p>
-  <p>text pas traduit</p>
-  <LocalSwitcher />
-  <p>2eme text pas traduit</p>
-  
-  </div>
+  <nav>
+    <router-link to="/">HomePage</router-link> |
+    <router-link to="/dashBoard">Dashboard</router-link>
+  </nav>
+  <router-view/>
 </template>
-
-<script>
-import LocalSwitcher from '@/components/LocalSwitcher.vue'
-
-export default {
-  name : 'App',
-  components:{
-    LocalSwitcher
-  }
-}
-
-</script>
 
 
